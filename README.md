@@ -16,7 +16,6 @@ O **objetivo do MVP** é implementar e testar o **módulo de registro de gastos*
 - **Backend**: Python + FastAPI  
 - **Banco de Dados**: SQLite
 - **Frontend**: React + TailwindCSS
-- **Infraestrutura**: Docker + Docker Compose  
 
 ### Estrutura modular
 - `/users` → autenticação e gerenciamento básico de usuários  
@@ -42,7 +41,6 @@ frontend/
     ├── components/
     ├── pages/
     └── services/
-docker-compose.yml
 .env.example
 GEMINI.MD
 README.md
@@ -55,11 +53,8 @@ README.md
 2. Crie um ambiente virtual: `python -m venv venv`
 3. Ative o ambiente virtual: `source venv/bin/activate` (ou `venv\Scripts\activate` no Windows)
 4. Instale as dependências: `pip install -r requirements.txt`
-5. Rode a aplicação: `uvicorn app.main:app --reload`
+5. Crie um arquivo `.env` a partir do `.env.example` e configure as variáveis de ambiente.
+6. Rode a aplicação: `uvicorn app.main:app --reload`
 
 ### Frontend
 Ainda a ser implementado.
-
-### Com Docker
-1. Certifique-se de ter o Docker e o Docker Compose instalados.
-2. Na raiz do projeto, execute: `docker-compose up --build`
